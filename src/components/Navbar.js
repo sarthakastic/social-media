@@ -1,10 +1,12 @@
-import { AppBar, Toolbar, styled, Typography, InputBase, Box, Badge, Avatar, Menu, MenuItem } from '@mui/material'
+import { AppBar, Toolbar, styled, Typography, InputBase, Box, Badge, Avatar, Menu, MenuItem, Button } from '@mui/material'
 import React from 'react'
 import FormatBoldIcon from '@mui/icons-material/FormatBold';
 import { Mail, Notifications } from '@mui/icons-material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
-
+import MenuIcon from '@mui/icons-material/Menu';
+import Hello from './Hello';
+import Post from './Post';
 
 
 
@@ -43,9 +45,10 @@ const UserBox = styled(Box)(({theme})=>({
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
 
 const [open,setOpen] = useState(false);
+
 
 
 
@@ -61,6 +64,10 @@ const [open,setOpen] = useState(false);
                 <SearchIcon/>
             </Search>
             
+            <Button     onClick={props.handleClick} sx={{display:{xs: "block", sm: "none"} }} >
+                <MenuIcon  color="error"/>
+            </Button>
+
             
             
             <Icons >
