@@ -33,7 +33,7 @@ const SidebarMobile = (props) => {
                     <HomeIcon/>
                 </ListItemIcon>
                 <ListItemText primary="Home" />
-            </ListItemButton>
+            </ListItemButton> 
         </ListItem>
         <ListItem disablePadding>
             <ListItemButton component="a" href="#/">

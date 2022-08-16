@@ -5,8 +5,7 @@ import { Mail, Notifications } from '@mui/icons-material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import Hello from './Hello';
-import Post from './Post';
+
 
 
 

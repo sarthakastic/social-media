@@ -1,7 +1,6 @@
 import { Box, createTheme, Stack, ThemeProvider } from '@mui/material';
 import { useState } from 'react';
 import Feed from './components/Feed';
-import Hello from './components/Hello';
 import Navbar from './components/Navbar';
 import Rightbar from './components/Rightbar';
 import Sidebar from './components/Sidebar';
